@@ -1,0 +1,22 @@
+*{
+    background-color: bisque;
+    margin:0;
+}
+
+@font-face {
+    font-family: 'titlefont';
+    src: url('../assets/flower3.TTF');
+}
+
+.title{
+    font-family: 'titlefont';
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 1000;
+
+}
+
+.descrip{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
