@@ -25,17 +25,17 @@
     justify-content: space-between;
 }
 
-.watercan{
+.water{
     text-align: right;
     text-decoration: none;
     border: none;
     transition-duration: 1s;
 }
 
-.watercan:hover{
+.water:hover{
     transform: rotate(-90deg);
 }
 
-.grass{
+.footer{
     width: 100%;
 }
