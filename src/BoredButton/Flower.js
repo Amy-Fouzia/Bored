@@ -28,20 +28,20 @@ export default function Flower (props) {
             if (water === 0) {
                 setImg(seedOne);
             }  
-            else if (water === 1) {
+            else if (water === 5) {
                 setImg(sproutOne);
             } 
-            else if (water === 2) {
+            else if (water === 6) {
                 setImg(seedlingOne);
             } 
-            else if (water === 3) {
+            else if (water === 8) {
                 setImg(plantOne);
             } 
-            else if (water === 4) {
+            else if (water === 9) {
                 setImg(flowerOne);
                 //add bees
             } 
-            else if (water === 5) {
+            else if (water === 14) {
                 setImg(witherOne);
             } 
         }
@@ -53,16 +53,16 @@ export default function Flower (props) {
             else if (water === 1) {
                 setImg(sproutTwo);
             } 
-            else if (water === 2) {
+            else if (water === 3) {
                 setImg(seedlingTwo);
             } 
-            else if (water === 3) {
+            else if (water === 5) {
                 setImg(plantTwo);
             } 
-            else if (water === 4) {
+            else if (water === 7) {
                 setImg(flowerTwo);
             } 
-            else if (water === 5) {
+            else if (water === 10) {
                 setImg(witherTwo);
             } 
         }
@@ -74,16 +74,16 @@ export default function Flower (props) {
             else if (water === 1) {
                 setImg(sproutThree);
             }
-            else if (water === 2) {
+            else if (water === 3) {
                 setImg(seedlingThree);
             } 
-            else if (water === 3) {
+            else if (water === 6) {
                 setImg(plantThree);
             } 
-            else if (water === 4) {
+            else if (water === 7) {
                 setImg(flowerThree);
             } 
-            else if (water === 5) {
+            else if (water === 11) {
                 setImg(witherThree);
             } 
         }

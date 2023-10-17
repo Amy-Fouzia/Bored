@@ -3,6 +3,8 @@ import styles from './boredbutton.module.css'
 import Flower from './Flower'
 import wateringCan from '../assets/wateringCan.png'
 import grass from '../assets/grass.png'
+import sun from '../assets/sun.png'
+import tools from '../assets/tools.png'
 
 export default function BoredButton(){
     const [water, setWater] = React.useState(0);
@@ -11,18 +13,32 @@ export default function BoredButton(){
     const [typeThree, setTypeThree] = React.useState(3);
 
     const Water = () => {
-        if (water === 5) {
+        if (water === 14) {
             //maybe add a gameover
-            setWater(0);
+            
         }
         else { setWater(water + 1); }  
     }
 
+    const resetFlowers = () => {
+        setWater(0);
+    }
+
     return(
         <>
-            <h1 className={styles.title}> Garden Party </h1>
-            <p className={styles.descrip}> click to watch your garden come to life! </p>
-            <img className={styles.water} src={wateringCan} onClick={Water} />
+            <div className={styles.header}>
+                <img className={styles.sun} src={sun} />
+                <div>
+                    <h1 className={styles.title}> Garden Party </h1>
+                    <p className={styles.descrip}> click to watch your garden come to life! </p>
+                </div>
+                <img className={styles.sun} src={sun} />
+                
+            </div>
+            <div className={styles.items} >
+                <img className={styles.water} src={wateringCan} onClick={Water} />
+                <img className={styles.tools} onClick={resetFlowers} src={tools}/> 
+            </div>
 
             <div className={styles.row}>  
                     <Flower 

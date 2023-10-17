@@ -10,26 +10,32 @@
 
 .title{
     font-family: 'titlefont';
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     font-weight: 1000;
+    color: white;
 }
 
 .descrip{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    color: white;
+    font-size:1.5rem;
 }
 
 .row{
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
+    width: 100%;
 }
 
 .water{
-    text-align: right;
-    text-decoration: none;
-    border: none;
+    position: relative;
+    
     transition-duration: 1s;
+    margin: 40px;
+    width: 100px;
 }
 
 .water:hover{
@@ -38,4 +44,39 @@
 
 .footer{
     width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun{
+    width: 6rem;
+}
+
+.tools{
+    width: 10%;
+    height: 30%;
+    
+}
+.tools:hover{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(10); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(10); }
+    100% { transform: translateY(-10px); }
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
