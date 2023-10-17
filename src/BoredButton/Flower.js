@@ -29,7 +29,7 @@ export default function Flower (props) {
                 setImg(seedOne);
             }  
             else if (water === 1) {
-                setImg(sproutOne.png);
+                setImg(sproutOne);
             } 
             else if (water === 2) {
                 setImg(seedlingOne);
