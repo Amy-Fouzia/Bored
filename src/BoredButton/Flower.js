@@ -39,6 +39,7 @@ export default function Flower (props) {
             } 
             else if (water === 4) {
                 setImg(flowerOne);
+                //add bees
             } 
             else if (water === 5) {
                 setImg(witherOne);

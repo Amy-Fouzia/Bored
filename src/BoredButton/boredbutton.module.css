@@ -19,3 +19,23 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.watercan{
+    text-align: right;
+    text-decoration: none;
+    border: none;
+    transition-duration: 1s;
+}
+
+.watercan:hover{
+    transform: rotate(-90deg);
+}
+
+.grass{
+    width: 100%;
+}

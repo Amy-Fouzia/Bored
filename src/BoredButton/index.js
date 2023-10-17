@@ -12,6 +12,7 @@ export default function BoredButton(){
 
     const Water = () => {
         if (water === 5) {
+            //maybe add a gameover
             setWater(0);
         }
         else { setWater(water + 1); }  
@@ -21,7 +22,7 @@ export default function BoredButton(){
         <>
             <h1 className={styles.title}> Garden Party </h1>
             <p className={styles.descrip}> click to watch your garden come to life! </p>
-            <button><img src={wateringCan} onClick={Water} /></button>
+            <button className={styles.watercan}><img src={wateringCan} onClick={Water} /></button>
 
             <div className={styles.row}>  
                     <Flower 
@@ -44,7 +45,7 @@ export default function BoredButton(){
                     />
             </div>
 
-            <img src={grass}></img>
+            <img className={styles.grass} src={grass}></img>
         </>
     )
 }
