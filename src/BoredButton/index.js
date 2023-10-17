@@ -21,7 +21,7 @@ export default function BoredButton(){
         <>
             <h1 className={styles.title}> Garden Party </h1>
             <p className={styles.descrip}> click to watch your garden come to life! </p>
-            <button><img src={wateringCan} onClick={Water} /></button>
+            <img className={styles.water} src={wateringCan} onClick={Water} />
 
             <div className={styles.row}>  
                     <Flower 
@@ -44,7 +44,7 @@ export default function BoredButton(){
                     />
             </div>
 
-            <img src={grass}></img>
+            <img className={styles.footer} src={grass}></img>
         </>
     )
 }
