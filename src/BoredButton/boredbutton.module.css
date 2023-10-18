@@ -1,6 +1,9 @@
 *{
-    background-color:powderblue;
     margin:0;
+}
+
+body{
+    background-color:powderblue;
 }
 
 @font-face {
@@ -79,4 +82,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.bee, .bee2{
+    margin: 0px 0px 0px 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    animation: travelRoundTheBorder 10s linear infinite;
+}
+
+.butterfly, .butterfly2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    animation: travelRoundTheBorder 20s linear infinite;
+}
+
+@keyframes travelRoundTheBorder {
+  0% {
+    bottom: 60%;
+    right: 100%;
+    transform: translate(50%, 50%);
+  }
+  
+  50% {
+    bottom: 50%;
+    right: 0%;
+    transform: translate(50%, 50%);
+  }
+  100%{
+    bottom: 40%;
+    right: 100%;
+    transform: translate(50%, 50%);
+  }
 }

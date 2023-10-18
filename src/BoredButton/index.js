@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './boredbutton.module.css'
 import Flower from './Flower'
+import Critter from './Critter'
 import wateringCan from '../assets/wateringCan.png'
 import grass from '../assets/grass.png'
 import sun from '../assets/sun.png'
@@ -13,11 +14,7 @@ export default function BoredButton(){
     const [typeThree, setTypeThree] = React.useState(3);
 
     const Water = () => {
-        if (water === 14) {
-            //maybe add a gameover
-            
-        }
-        else { setWater(water + 1); }  
+       setWater(water + 1);
     }
 
     const resetFlowers = () => {
@@ -39,7 +36,34 @@ export default function BoredButton(){
                 <img className={styles.water} src={wateringCan} onClick={Water} />
                 <img className={styles.tools} onClick={resetFlowers} src={tools}/> 
             </div>
-
+            <div className={styles.bee}>
+            <Critter water={water} 
+                        type={typeOne}
+                        setWater={setWater}
+                        setType={setTypeOne} 
+                        />
+            </div>
+            <div className={styles.butterfly}>
+            <Critter className={styles.butterfly} water={water} 
+                        type={typeTwo}
+                        setWater={setWater}
+                        setType={setTypeTwo}
+                        />
+            </div>
+            <div className={styles.bee2}>
+            <Critter water={water} 
+                        type={typeOne}
+                        setWater={setWater}
+                        setType={setTypeOne} 
+                        />
+            </div>
+            <div className={styles.butterfly2}>
+            <Critter className={styles.butterfly} water={water} 
+                        type={typeTwo}
+                        setWater={setWater}
+                        setType={setTypeTwo}
+                        />
+            </div>
             <div className={styles.row}>  
                     <Flower 
                         water={water} 

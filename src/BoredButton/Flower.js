@@ -89,10 +89,6 @@ export default function Flower (props) {
         }
     }, [type, water]);
 
-    console.log(water);
-    console.log(type);
-    console.log(img);
-
     return(
         <div>
             <img src={ img }/>
